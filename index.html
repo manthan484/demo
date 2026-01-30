@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🏨 Hotel Management System</h1>
+  </header>
+
+    <nav>
+    <button onclick="openTab('dashboard')">Dashboard</button>
+    <button onclick="openTab('guests')">Guests</button>
+    <button onclick="openTab('rooms')">Rooms</button>
+    <button onclick="openTab('booking')">Booking</button>
+    </nav>
+
+  <main>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="tab active">
+      <h2>Dashboard</h2>
+      <div class="cards">
+        <div class="card">Total Rooms: <strong>20</strong></div>
+        <div class="card">Available: <strong>12</strong></div>
+        <div class="card">Booked: <strong>8</strong></div>
+      </div>
+    </section>
+
+    <!-- Guests -->
+    <section id="guests" class="tab">
+      <h2>Add Guest</h2>
+      <input type="text" placeholder="Guest Name">
+      <input type="email" placeholder="Email">
+      <input type="text" placeholder="Phone">
+      <button>Add Guest</button>
+    </section>
+
+    <!-- Rooms -->
+    <section id="rooms" class="tab">
+      <h2>Rooms</h2>
+      <table>
+        <tr>
+          <th>Room No</th>
+          <th>Type</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>101</td>
+          <td>Single</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Double</td>
+          <td>Booked</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Booking -->
+    <section id="booking" class="tab">
+      <h2>Book Room</h2>
+      <input type="text" placeholder="Guest Name">
+      <input type="number" placeholder="Room Number">
+      <input type="date" placeholder="Booked date">
+      <button>Book Room</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
